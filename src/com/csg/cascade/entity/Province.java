@@ -1,6 +1,6 @@
 package com.csg.cascade.entity;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -11,7 +11,7 @@ import java.util.Map;
 public class Province {
 	private String code;
 	private String name;
-	private Map cities = new LinkedHashMap();
+	private Map<String, City> cities = new HashMap();
 	
 	public Province(String code,String name){
 		this.code = code;
@@ -29,10 +29,10 @@ public class Province {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Map getCities() {
+	public Map<String, City> getCities() {
 		return cities;
 	}
-	public void setCities(Map cities) {
+	public void setCities(Map<String, City> cities) {
 		this.cities = cities;
 	}
 	

@@ -9,10 +9,19 @@
     <servlet-name>CascadeServlet</servlet-name>
     <servlet-class>com.csg.cascade.servlet.CascadeServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.csg.servlet.NewsServlet</servlet-class>
+  </servlet>
+
 
   <servlet-mapping>
     <servlet-name>CascadeServlet</servlet-name>
     <url-pattern>/cascade</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/newsServlet</url-pattern>
   </servlet-mapping>	
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

@@ -1,4 +1,4 @@
-package com.csg.cascade.servlet;
+package com.csg.servlet;
 
 import java.io.IOException;
 import java.util.HashMap;

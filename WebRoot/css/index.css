@@ -1,0 +1,221 @@
+/* offset to take top navbar into account */
+#main { margin-top: 0px; }
+
+/* wallpaper hack doesnt make sense in print */
+@media print {
+  .backstretch img {
+    display: none !important
+  }
+}
+
+body {
+  color: #ccc;
+  background-color: #050517;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+}
+
+pre, code {
+  font-family: "Oxygen Mono", monospaced;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: 1px solid rgba(0,0,0,0.8);
+}
+
+.smallprint {
+  font-size: 0.8em;
+  color: #666666;
+}
+
+.captioned-image {
+  margin: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .captioned-image {
+    width: 50%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .captioned-image {
+    width: 80%;
+    margin: 2  
+  }
+}
+
+#header img {
+  margin: 20px;
+}
+
+.navbar {
+  font-size: 1.1em; 
+  margin: 0px;
+}
+
+.navbar-inverse  {
+  background-color: rgba(0,0,0,0.4);
+  border: 0;
+}
+
+.nav > li > a {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+  color: #777;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom-color: transparent;
+}
+
+.nav > li > a:hover, .nav > li.open > a:hover {
+  color: white;
+  border-bottom: 4px solid orange;
+  padding-bottom: 11px;
+}
+
+.nav ul.dropdown-menu {
+  background: rgba(0,0,0,0.8);
+}
+
+.nav ul.dropdown-menu a {
+  color: white;
+}
+
+.nav .dropdown-menu > li > a:hover {
+  background: orange;
+  color: white;
+}
+
+.navbar-header  a.navbar-brand {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a.navbar-brand {
+  font-size: inherit;
+}
+
+.jumbotron {
+  background: none;
+  padding-bottom: 12px;
+}
+
+.jumbotron h1 {
+  font-weight: 200;
+  color: white;
+  text-shadow: 0px 0px 12px rgba(255,255,255,0.4);
+}
+.jumbotron p {
+  font-weight: 200;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.container h1.video {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.container  h2.video {
+  text-align: center;
+}
+
+.container h3.video {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.container iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+.downloadbutton a {
+  display: inline;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+/*  text-transform: uppercase; */
+  text-shadow: 0 0.5px 2px rgba(0,0,0,0.3);
+  background: goldenrod;
+  background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%);
+  padding: 0 32px 0 32px;
+  border-radius: 60px;
+  text-align: center;
+  border: 2px solid #cc6611;
+}
+
+.downloadbutton a:active {
+  background: linear-gradient(to bottom, rgba(255,175,75,1) 100%,rgba(255,146,10,1) 0%);
+}
+
+div.thumbnail {
+  background: rgba(255,255,255,1);
+  border-radius: 7px;
+  border: none;
+  padding-top: 24px;
+}
+
+ul#markdown-toc {
+  width: 30%;
+  float: right;
+  background: rgba(255,255,255,0.05);
+  border-radius: 7px;
+  margin: 12px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+
+ul#markdown-toc > li {
+  margin-left: 6px;
+}
+
+ul#markdown-toc:before {
+  content: "Table of Contents";
+  font-weight: 300;
+  font-size: 1.6em;
+  margin-left: -18px;
+  margin-bottom: 2px;
+  text-decoration: underline;
+}
+
+/* rss feed jquery plugin */
+.feedEkList{
+//  width:450px; 
+  list-style:none outside none;
+}
+.itemTitle a{
+  font-weight:bold;
+}
+.itemDate{
+  font-size: 0.8em;
+  color:rgba(255,255,255,0.5);
+}
+#CSVTable a {
+  color: #ddd;
+}
+
+ul.sessions a {
+  font-weight: 600;
+  color: #aaa;
+}

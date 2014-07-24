@@ -10,9 +10,9 @@
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />  
 	<link href="css/index.css" rel="stylesheet">
-	<link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   </head>
   
   <body>
@@ -62,6 +62,7 @@
 			<ul>
 				<li><span>2014-7-21：</span><a href="sjld.jsp">三级联动</a></li>
 				<li><span>2014-7-22：</span><a href="jquery0722.jsp">Jquery初级</a></li>
+				<li><span>2014-7-24：</span><a href="jqueryUI.html">JqueryUI和jGraid</a></li>
 			</ul>
     		
     	</div>
@@ -71,7 +72,7 @@
 	          <p class="text-muted credit">© 2014 The Java web Project | <a href="/legal/">Adam</a></p>
 	        </div>
 	    </div>
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-1.11.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
   </body>
 </html>

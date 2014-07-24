@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JqueryUI</title>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="jquery/jquery-ui-1.11.0/jquery-ui.min.css" >
+<style type="text/css">
+	#panle input,#panle select{
+		width:90%;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="panle">
+			<form name = "frmUser" id = "frmUser" action = "addUser" method = "post">
+				<ul>
+					<li>
+						<span>姓名</span>
+						<input type="text" id="name" name="name" />
+					</li>
+					<li>
+						<span>性别</span>
+						<select  id="sex" name="sex">
+							<option value="man" selected=selected >男</option>
+							<option value="woman">女</option>
+						</select>
+					</li>
+					<li>
+						<span>籍贯</span>
+						<input type = "text" name = "nativeplace" id = "nativeplace" />
+					</li>
+					<li>
+						<span>身份证</span>
+						<input type="text" id="idcard" name="idcard"  />
+					</li>
+					<li>
+						<span>生日</span>
+						<input type="text" id="birthday" name="birthday"   />
+					</li>
+				</ul>
+								
+			</form>
+		</div>
+	</div>
+	<script src="jquery/jquery-1.11.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="jquery/jquery-ui-1.11.0/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$("#panle").dialog({
+			title : "用户注册" ,
+			width : 400,
+			height : 400,
+			buttons :{
+				"提交":function(){
+					var inpName=$("#name");
+					var inpSex=$("#sex");
+					var inpNativeplace = $("#nativeplace");
+					var inpIdcard = $("#idcard");
+					var inpBirthday = $("#birthday");
+					$("#frmUser").submit;
+				},
+				"重置":function(){
+					$("#name").val("1111");
+					$("#sex").val("");
+					$("#nativeplace").val("");
+					$("#idcard").val("");
+					$("#birthday").val("");
+				}
+			},
+			position : {
+				my : "center center",
+				at : "center center"
+			}
+		});
+	</script>
+	
+</body>
+</html>

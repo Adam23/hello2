@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<title>jquery初级</title>
-		<link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 		<style type="text/css">
 		.lblmouseover {
 			cursor: pointer;
@@ -50,8 +50,8 @@
 		</div>
 		
 		
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
+	<script src="jquery/jquery-1.11.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
 		$(function(){
 			//下拉收起
@@ -89,12 +89,12 @@
 		$(function(){
 			$("li.list-group-item").bind("mouseover" , function(){
 				$(this).addClass("lblmouseover");
-			})
+			});
 			
 			$("li.list-group-item").bind("mouseout" , function(){
 				$(this).removeClass("lblmouseover");
-			})
-		})
+			});
+		});
 	</script>
 	</body>
 </html>

@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta charset="UTF-8">
 <title>JqueryUI</title>
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="jquery/jquery-ui-1.11.0/jquery-ui.min.css" >
@@ -26,8 +27,8 @@
 					<li>
 						<span>性别</span>
 						<select  id="sex" name="sex" title = "请选择性别">
-							<option value="man" selected=selected >男</option>
-							<option value="woman">女</option>
+							<option value="男" selected=selected >男</option>
+							<option value="女" >女</option>
 						</select>
 					</li>
 					<li>
@@ -82,8 +83,9 @@
 							inpBirthday.tooltip("open");
 							inpBirthday.addClass("error");
 						}
+						
 						if($("*.error").size()==0){
-							$("#frmUser").submit;
+							$("#frmUser").submit();
 						}
 						
 					},

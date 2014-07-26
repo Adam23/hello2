@@ -62,7 +62,7 @@
 			<ul>
 				<li><span>2014-7-21：</span><a href="sjld.jsp">三级联动</a></li>
 				<li><span>2014-7-22：</span><a href="jquery0722.jsp">Jquery初级</a></li>
-				<li><span>2014-7-24：</span><a href="jqueryUI.html">JqueryUI和jGraid</a></li>
+				<li><span>2014-7-24：</span><a href="jqueryUI.jsp">JqueryUI和jqGrid</a></li>
 			</ul>
     		
     	</div>

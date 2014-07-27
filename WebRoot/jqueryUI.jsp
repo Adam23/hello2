@@ -100,7 +100,7 @@
 			});
 			
 			$("#txtNativeplace").autocomplete({
-				source: "AreaServlet",
+				source: "areaServlet",
 				select: function(event, rec){
 					console.info(rec);
 					$("#nativeplace").val(rec.item.id);

@@ -40,7 +40,7 @@
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>AreaServlet</servlet-name>
-    <url-pattern>/AreaServlet</url-pattern>
+    <url-pattern>/areaServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>AddUserServlet</servlet-name>
@@ -50,6 +50,7 @@
     <servlet-name>UserListServlet</servlet-name>
     <url-pattern>/userlist</url-pattern>
   </servlet-mapping>	
+  
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

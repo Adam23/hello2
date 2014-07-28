@@ -63,8 +63,9 @@
 				<li><span>2014-7-21：</span><a href="sjld.jsp">三级联动</a></li>
 				<li><span>2014-7-22：</span><a href="jquery0722.jsp">Jquery初级</a></li>
 				<li><span>2014-7-24：</span><a href="jqueryUI.jsp">JqueryUI和jqGrid</a></li>
+				<li><span>2014-7-25：</span><a href="#">MVC与struts2</a></li>
+				<li><span>2014-7-27：</span>struts2 + <a href="upload.html">使用servlet进行文件上传</a></li>
 			</ul>
-    		
     	</div>
     
 	    <div id="footer">

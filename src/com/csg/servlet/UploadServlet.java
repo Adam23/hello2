@@ -32,21 +32,28 @@ public class UploadServlet extends HttpServlet {
 		//创建FileUpload的核心对象
 		DiskFileItemFactory factory = new DiskFileItemFactory();
 		ServletFileUpload sfu = new ServletFileUpload(factory);
-		
+		//设置文件大小8M
+		sfu.setFileSizeMax(1024*1024*8);
+		sfu.setHeaderEncoding("UTF-8");
 		try {
 			List<FileItem> list = sfu.parseRequest(request);
 			for(FileItem i :list){
 				System.out.println(i.getName());
 				//判断是不是标准组件
 				if(i.isFormField()==true){
-					
-					System.out.println(i.toString());
+					System.out.println(i.getString("UTF-8"));
 				}else{
 					String fName = i.getName();
+					//获取文件扩展名
 					String suffix = fName.substring(fName.lastIndexOf("."));
+					if(!(suffix.equalsIgnoreCase(".jpg")||suffix.equalsIgnoreCase(".png"))){
+						
+					}
+					//文件命名
 					String targetName = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date())+new Double(Math.random()*10000).intValue();
-					
-					File file = new File("F://y"+targetName+suffix);
+					//获取web应用所在路径
+					String targetPath = this.getServletContext().getRealPath("/")+"myFiles/";
+					File file = new File(targetPath+targetName+suffix);
 					i.write(file);
 					System.out.println("上传成功");
 				}

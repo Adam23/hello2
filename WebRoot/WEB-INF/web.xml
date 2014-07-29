@@ -29,6 +29,11 @@
     <servlet-name>UploadServlet</servlet-name>
     <servlet-class>com.csg.servlet.UploadServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <servlet-class>com.csg.servlet.DownLoadServlet</servlet-class>
+  </servlet>
+
 
 
 
@@ -58,6 +63,10 @@
   <servlet-mapping>
     <servlet-name>UploadServlet</servlet-name>
     <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
   </servlet-mapping>	
   
   <welcome-file-list>

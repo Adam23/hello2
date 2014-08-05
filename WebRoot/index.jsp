@@ -65,6 +65,7 @@
 				<li><span>2014-7-24：</span><a href="jqueryUI.jsp">JqueryUI和jqGrid</a></li>
 				<li><span>2014-7-25：</span><a href="#">MVC与struts2</a></li>
 				<li><span>2014-7-27：</span>struts2 + <a href="upload.html">使用servlet进行文件上传</a></li>
+				<li><span>2014-8-5：</span><a href="sjm.html">小明的神经猫</a></li>
 			</ul>
     	</div>
     
